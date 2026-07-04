@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+
+.header{
+    width:100%;
+    background:#111;
+    overflow:hidden;
+    padding:15px 40px;
+}
+
+.logo{
+    float:left;
+}
+
+.logo h2{
+    color:white;
+    margin-top:10px;
+}
+
+.logo i{
+    margin-right:8px;
+}
+
+.menu{
+    float:right;
+    margin-top:12px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:red;
+}
+
+/* Banner */
+
+.banner{
+    width:100%;
+    height:420px;
+    background:url("https://i.pinimg.com/1200x/ce/fa/bb/cefabbcebea8d7e10f383ba5fd81ec98.jpg") no-repeat center center;
+    background-size:cover;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    color:white;
+    text-align:center;
+    padding-top:150px;
+}
+
+.overlay h1{
+    font-size:55px;
+}
+
+.overlay p{
+    font-size:22px;
+    margin-top:10px;
+}
+
+/* Contact */
+
+.contact{
+    width:90%;
+    margin:50px auto;
+    overflow:hidden;
+}
+
+.left{
+    width:58%;
+    float:left;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.right{
+    width:38%;
+    float:right;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.left h2,
+.right h2{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+}
+
+input:focus,
+textarea:focus{
+    border-color:red;
+}
+
+button{
+    background:blue;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#111;
+}
+
+.right p{
+    margin:15px 0;
+    line-height:1.8;
+}
+
+.right h3{
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+/* Footer */
+
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.header{
+    text-align:center;
+    padding:20px;
+}
+
+.logo,
+.menu{
+    float:none;
+}
+
+.menu{
+    margin-top:20px;
+}
+
+.menu a{
+    display:block;
+    margin:10px 0;
+}
+
+.left,
+.right{
+    width:100%;
+    float:none;
+    margin-bottom:20px;
+}
+
+.overlay h1{
+    font-size:40px;
+}
+
+.overlay p{
+    font-size:18px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+
+    <div class="logo">
+        <h2><i class="fa-solid fa-bag-shopping"></i> Shopper</h2>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="Produce.html">Product</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="card.html">Cart</a>
+    </div>
+
+</div>
+
+<div class="banner">
+    <div class="overlay">
+        <h1>Contact Us</h1>
+        <p>Enjoy Shopping with Gen_Z</p>
+    </div>
+</div>
+
+<div class="contact">
+
+    <div class="left">
+        <h2>Send Us a Message</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name">
+
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter your phone number">
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea rows="6" placeholder="Write your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="right">
+
+        <h2>Contact Information</h2>
+
+        <p><i class="fa-solid fa-envelope"></i> <b>Email:</b> genz@gmail.com</p>
+
+        <p><i class="fa-solid fa-phone"></i> <b>Phone:</b> +855 96 43 78 80</p>
+
+        <p><i class="fa-solid fa-location-dot"></i> <b>Address:</b> AEON Mall Sen Sok City, Phnom Penh</p>
+
+        <h3>Follow Us</h3>
+
+        <p><i class="fa-brands fa-facebook"></i> Gen_Z Collection</p>
+
+        <p><i class="fa-brands fa-instagram"></i> @genz_collection</p>
+
+        <p><i class="fa-brands fa-youtube"></i> Gen_Z Collection</p>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <p> 2026 Gen_Z Collection. All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

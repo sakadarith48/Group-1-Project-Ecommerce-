@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Navbar */
+
+nav{
+    background:#111;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:35px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+/* Hero */
+
+.hero{
+    height:350px;
+    background:url("https://i.pinimg.com/1200x/ce/fa/bb/cefabbcebea8d7e10f383ba5fd81ec98.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+}
+
+.hero-text{
+    position:relative;
+    color:white;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:55px;
+}
+
+.hero-text p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+/* Logo Section */
+
+.company{
+    background:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.company img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+}
+
+.company h2{
+    margin-top:20px;
+    font-size:35px;
+}
+
+.company p{
+    margin-top:15px;
+    color:#666;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.8;
+}
+
+/* Team */
+
+.team{
+    padding:60px 8%;
+}
+
+.team h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.team-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    width:220px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0 5px;
+}
+
+.card p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo"><i class="fa-solid fa-bag-shopping"></i> Shopper</div>
+
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Produce</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Card</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>About Us</h1>
+<p>Enjoy Shopping with Gen_Z</p>
+</div>
+
+</section>
+
+<section class="company">
+
+<img src="https://scontent.fpnh11-1.fna.fbcdn.net/v/t39.30808-6/326740429_1933386307027242_4544503231498968043_n.png?stp=dst-jpg_tt6&cstp=mx265x265&ctp=s265x265&_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG1brtkHOk39Ehxn803qg3JrxABM_T-NmevEAEz9P42Z6PZgU65n76va8SFPLk84bVA_UVvcyj2VapQ2oTl_-fI&_nc_ohc=T2zun08V-wQQ7kNvwECPjcU&_nc_oc=AdoQ0JPESlYhvP8SHhj4Lk9bb8m1Aj6vkcupQsM3RCOt4MreOR7t4XGCyi_-B1MbOAY&_nc_zt=23&_nc_ht=scontent.fpnh11-1.fna&_nc_gid=64uGXytS8AVm7lhDvXHfLA&_nc_ss=7b2a8&oh=00_AQCH9lrVK-5VgDB7O_7yIicCAJn4mBbRIdEQ8Y_GPWUEaQ&oe=6A4ED418" alt="Logo">
+   <p>We're study at Etec Center</p>
+
+
+</section>
+
+<section class="team">
+
+<h2>Meet Our Team</h2>
+
+<div class="team-container">
+
+<div class="card">
+<img src="/photo_2026-07-04_21-17-26.jpg" alt="">
+<h3>Rith Sakada</h3>
+<p>Leader</p>
+</div>
+
+<div class="card">
+    <img src="/photo_2026-07-04_21-13-52.jpg" alt="">
+    <h3>Ny Tang eeg</h3>
+    
+</div>
+
+<div class="card">
+    <img src="/photo_2026-07-04_21-51-04.jpg" alt="">
+    <h3>Va Phat Thai</h3>
+    
+</div>
+
+<div class="card">
+    <img src="/photo_2026-07-04_21-30-29.jpg" alt="">
+    <h3>Thaoung Pisey</h3>
+   
+</div>
+
+<div class="card">
+    <img src="/photo_2026-07-04_21-14-38.jpg" alt="">
+    <h3>Mardy Sophondara</h3>
+    
+</div>
+
+</div>
+
+</section>
+
+<footer>
+    © 2026 Shopper | All Rights Reserved
+</footer>
+
+</body>
+</html>
