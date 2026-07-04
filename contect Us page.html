@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+        }
+
+        /* Navigation */
+        .navbar{
+            background:#222;
+            overflow:hidden;
+        }
+
+        .navbar a{
+            float:left;
+            color:white;
+            text-decoration:none;
+            padding:15px 20px;
+        }
+
+        .navbar a:hover{
+            background:#007bff;
+        }
+
+        /* Main */
+        .container{
+            width:90%;
+            margin:30px auto;
+            background:white;
+            padding:30px;
+            display:flex;
+            justify-content:space-between;
+        }
+
+        .left{
+            width:60%;
+        }
+
+        .right{
+            width:30%;
+        }
+
+        h1{
+            margin-bottom:20px;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input,textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        textarea{
+            height:150px;
+        }
+
+        button{
+            margin-top:20px;
+            width:100%;
+            padding:12px;
+            background:#0066ff;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#004dcc;
+        }
+
+        .info{
+            margin-bottom:30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Shopper</a>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+</div>
+
+<div class="container">
+
+    <div class="left">
+
+        <h1>Contact Us</h1>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea placeholder="Write your message"></textarea>
+
+            <button type="submit">SEND MESSAGE</button>
+
+        </form>
+
+    </div>
+
+    <div class="right">
+
+        <div class="info">
+            <h3>Email</h3>
+            <p>info@shopper.com</p>
+        </div>
+
+        <div class="info">
+            <h3>Phone</h3>
+            <p>+855 96 4390</p>
+        </div>
+
+        <div class="info">
+            <h3>Address</h3>
+            <p>
+                123 Main Street<br>
+                Phnom Penh, Cambodia
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
