@@ -3,9 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-<body>
-    
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container1{
+        width: 100%;
+        height: 100vh;
+        background-color:black;
+        background-image: url(https://i.pinimg.com/1200x/59/00/9c/59009c392aae514b2e194ed1a2607437.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 50px ;
+        display:flex ;
+        flex-direction: column;
+        justify-content: space-between;
+        color: aliceblue;
+        position: relative;
+    }
+    .card1{
+        position: absolute;
+        top: 50%;
+        left: 50px;
+        padding: 80px;
+    }
+    .btn1{
+        background-color:#dde8e5;
+        color: rgb(26, 25, 25);
+        padding: 10px 50px;
+        border-radius: 4px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: 0.5s ease;
+    }
+    button:hover{
+        background-color: rgb(23, 65, 51);
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .text{
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 400px;
+        font-size: 18px;
+    }
+    .container2{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card2{
+        width: 380px;
+        height: 550px;
+        background-color: #F5F5F5;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .card2>.ipg{
+        width: 60%;
+        object-fit: contain;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    h6{
+        font-size: 20px;
+        color: rgb(255, 253, 253);
+        padding: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h4{
+        color: red;
+        font-size: 15px;
+       
+    }   
+    .btn2{
+        margin: 10px;
+        padding: 10px 120px;
+        border-radius: 8px;
+        color:#215E61;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        transition: 0.5s ease;
+    }
+    .container{
+        display: flex;
+    }
+    h5{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 85px;
+        color: red;
+    }
+    h2{
+        color:gray;
+    }
+    .code{
+        color: black;
+        font-size: 95px;
+    }
+</style>
+<body>  
+    <div class="container1">
+       <h1 class="code">WELCOME!!!</h1>
+       <div class="card1">
+            <h5>TRENDING</h5>
+            <h1>GEN-Z</h1>
+            <h2>NEW COLLATION</h2>
+            <button class="btn1">Shop Now</button>
+       </div>
+       <div class="text">
+            <h5 style="display: flex; gap: 10px;"><i class="fa-solid fa-truck-fast"></i>FREE SHIPPING ON ORDERS OVER $50</h5>
+            <h5 style="display: flex; gap: 10px;"><i class="fa-solid fa-user"></i>24/7 CUSTOMER SUPPORT</h5>
+            <h5 style="display: flex; gap: 10px;"><i class="fa-regular fa-money-bill-1"></i>PAY MONEY FIRST</h5>
+       </div>
+    </div>
+    <div class="container">
+        <div class="container2">
+        <div class="card2">
+            <img class="ipg" src="https://i.pinimg.com/736x/27/6c/25/276c258b9dd47b3e27d47d65f2eeb19f.jpg" alt="">
+            <h6>Women Dress<i class="fa-solid fa-circle-user"></i></h6>
+            <h4>price 39.99$</h4>
+            <button class="btn2">Get it</button>
+        </div>
+    </div>
+      <div class="container2">
+        <div class="card2">
+            <img class="ipg" src="https://i.pinimg.com/1200x/43/50/60/435060f951fcdeafaf659b4506b35eed.jpg "alt="">
+            <h6> Men Dress<i class="fa-regular fa-circle-user"></i></h6>
+            <h4>price 99.99$</h4>
+            <button class="btn2">Get it</button>
+        </div>
+    </div>
+      <div class="container2">
+        <div class="card2">
+            <img class="ipg" src="https://i.pinimg.com/1200x/96/7b/6b/967b6b4e4a98f0c8ce7434eb8f4f0fc2.jpg" alt="">
+            <h6>Shoes<i class="fa-solid fa-shoe-prints"></i></h6>
+            <h4>price 19.99$</h4>
+            <button class="btn2">Get it</button>
+        </div>
+    </div>
+     <div class="container2">
+        <div class="card2">
+            <img class="ipg" src="https://i.pinimg.com/736x/83/b3/7d/83b37d22a3a07c4323781e05df3d1a55.jpg" alt="">
+            <h6>Bag<i class="fa-solid fa-bag-shopping"></i></h6>
+            <h4>price 29.99$</h4>
+            <button class="btn2">Get it</button>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
