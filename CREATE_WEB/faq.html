@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer FAQ | E-Commerce Store</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+        h1 { text-align: center; }
+        .faq-item { border-bottom: 1px solid #ddd; padding: 15px 0; }
+        .faq-question { width: 100%; text-align: left; background: none; border: none; font-size: 1.1rem; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; padding: 10px 0; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; color: #666; }
+        .faq-item.active .faq-answer { max-height: 200px; padding-bottom: 10px; }
+
+     h1{
+            height: 20px;
+            width: 100%;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 10px 20px;
+            background-color: black;
+            color: aliceblue;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            background-color: aquamarine;
+        }
+        .container{
+            background-color
+        }
+
+    </style>
+</head>
+<body>
+
+   <div class="container">
+     <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">How do I place my order? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Simply browse our catalog, add items to your cart, and click the "Checkout" button. Follow the prompts to enter your shipping and payment information.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">How can I track my order? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Once your order has shipped, you will receive an email containing your tracking number and a link to monitor your package's progress.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">How can I contact customer support? <span>+</span></button>
+            <div class="faq-answer">
+                <p>You can reach our team via email at support@example.com or use the "Live Chat" widget in the bottom-right corner of our website.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">What is your return policy? <span>+</span></button>
+            <div class="faq-answer">
+                <p>We offer a 30-day return policy on all unused items in their original packaging.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleFAQ(this)">How long does shipping take? <span>+</span></button>
+            <div class="faq-answer">
+                <p>Standard shipping typically takes 3-5 business days.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(element) {
+            element.parentElement.classList.toggle('active');
+        }
+    </script>
+   </div>
+</body>
+</html>

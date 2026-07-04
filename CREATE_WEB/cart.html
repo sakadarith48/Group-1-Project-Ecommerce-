@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; display: flex; justify-content: center; padding: 20px; }
+        .cart-container { background: white; width: 100%; max-width: 800px; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        header { background: #333; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: white; text-decoration: none; margin-left: 15px; font-size: 0.9em; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th { text-align: left; padding: 15px 20px; color: #666; font-size: 0.9em; }
+        td { padding: 15px 20px; border-bottom: 1px solid #eee; vertical-align: middle; }
+        
+        .product-info { display: flex; align-items: center; gap: 15px; }
+        .product-img { width: 50px; height: 50px; object-fit: contain; }
+
+        .cart-footer { padding: 20px; text-align: right; }
+        .total { font-weight: bold; font-size: 1.2em; margin-bottom: 20px; }
+        button { padding: 10px 25px; border: none; border-radius: 4px; cursor: pointer; }
+        .btn-continue { background: none; margin-right: 10px; }
+        .btn-checkout { background: #4a90e2; color: white; }
+    </style>
+</head>
+<body>
+
+<div class="cart-container">
+    <header>
+        <strong>Shopper</strong>
+        <nav>
+            <a href="#">Home</a><a href="#">Products</a><a href="#">About</a><a href="#">Contact</a><a href="#">Cart</a>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <h2>Your Cart</h2>
+        <table>
+            <thead>
+                <tr><th>Product</th><th>Price</th><th>Quantity</th><th>Total</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="product-info"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsuHAJCW-qz5sZZQS8fORe9zNEXzjZm9WTJerrJwOx1A&s=10" class="product-img"><span>Headphones</span></div></td>
+                    <td>$49.99</td><td>1 -</td><td>$49.99</td>
+                </tr>
+                <tr>
+                    <td><div class="product-info"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4PmIxa-Z7x1Q9ucFKqgunnBxq3MS4-trH1ZdP14r3lw&s=10" class="product-img"><span>Smart Watch</span></div></td>
+                    <td>$79.99</td><td>1 -</td><td>$79.99</td>
+                </tr>
+                <tr>
+                    <td><div class="product-info"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiok6OZFX7mV6HgCt-9D1-8nX2x9h14UGo3W_puItNoA&s=10" class="product-img"><span>Shoes</span></div></td>
+                    <td>$59.99</td><td>1 -</td><td>$59.99</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-footer">
+            <div class="total">Total: $189.97</div>
+            <button class="btn-continue">Continue Shopping</button>
+            <button class="btn-checkout">Checkout</button>
+        </div>
+    </main>
+</div>
+
+</body>
+</html>
