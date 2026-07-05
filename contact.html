@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Shopper</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-bag-shopping"></i> Shopper
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO / BANNER -->
+    <section class="contact-hero">
+
+        <div class="contact-hero-text">
+            <h1>Contact Us</h1>
+            <p>We’re here to help you anytime</p>
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+
+        <!-- LEFT FORM -->
+        <div class="contact-form">
+
+            <h2>Send Message</h2>
+
+            <form>
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter your phone">
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Message</label>
+                <textarea rows="6" placeholder="Write your message"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+
+        <!-- RIGHT INFO -->
+        <div class="contact-info">
+
+            <h2>Contact Info</h2>
+
+            <p><i class="fa-solid fa-envelope"></i> genz@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +855 96 43 78 80</p>
+            <p><i class="fa-solid fa-location-dot"></i> Phnom Penh, Cambodia</p>
+
+            <h3>Follow Us</h3>
+
+            <p><i class="fa-brands fa-facebook"></i> Gen_Z Collection</p>
+            <p><i class="fa-brands fa-instagram"></i> @genz_collection</p>
+            <p><i class="fa-brands fa-youtube"></i> Gen_Z Collection</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FAQ SECTION ================= -->
+
+    <section class="faq">
+
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    How do I place my order?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Browse products, add to cart, then checkout and enter your details.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    How can I track my order?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        You will receive a tracking link after your order is shipped.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    What is your return policy?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        We offer 30-day returns on unused items in original packaging.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    How long does shipping take?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Standard delivery takes 3–5 business days.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        function toggleFAQ(el) {
+            el.parentElement.classList.toggle("active");
+        }
+    </script>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Shopper | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
