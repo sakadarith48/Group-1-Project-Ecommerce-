@@ -55,8 +55,6 @@
 
 body {
   margin: 0;
-  padding-left: 30px;
-  padding-right: 30px;
   background: var(--bg);
   font-family: 'DM Sans', sans-serif;
   color: var(--ink);
@@ -70,6 +68,8 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* ---------- Card ---------- */
@@ -306,4 +306,53 @@ body {
     width: 36px;
     height: 78px;
   }
+}
+
+.back-btn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+
+    text-decoration: none;
+    color: #FCF8F7;
+    font-size: 14px;
+    font-weight: 600;
+
+    background: rgba(8, 15, 35, 0.4);
+    border: 1px solid black;
+    border-radius: 30px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.back-btn:hover{
+    background: black;
+    color: white;
+
+    box-shadow: 0 0 15px black;
+
+    transform: translateY(-2px);
+}
+
+.back-btn i{
+    font-size: 14px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
